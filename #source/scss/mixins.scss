@@ -1,0 +1,5 @@
+$root_fz:10px;
+@mixin container () {
+    max-width: 110rem;
+    margin: auto;
+}
