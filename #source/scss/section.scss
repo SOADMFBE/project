@@ -2,11 +2,14 @@
     @include container();
     background-color: pink;
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    //grid-template-columns: 25% 25% 25%;
+    grid-auto-flow: column;
+    justify-content: center;
     div {
         font-size: 1.5rem;
         h1 {
             font-size: 2rem;
+            margin: 1rem 3rem;
         }
         margin: 1rem 2rem 1rem 2rem;
     }

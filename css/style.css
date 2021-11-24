@@ -10,8 +10,10 @@
   background-color: pink;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25%;
-  grid-template-columns: 25% 25% 25%;
+  grid-auto-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .first div {
   font-size: 1.5rem;
@@ -19,6 +21,7 @@
 }
 .first div h1 {
   font-size: 2rem;
+  margin: 1rem 3rem;
 }
 
 * {
