@@ -1,6 +1,6 @@
 .first {
     @include container();
-    background-color: pink;
+    background-color: rgb(72, 95, 139);
     display: grid;
     //grid-template-columns: 25% 25% 25%;
     grid-auto-flow: column;
@@ -14,4 +14,8 @@
         }
         margin: 1rem 2rem 1rem 2rem;
     }
+}
+
+.button {
+    
 }

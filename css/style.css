@@ -1,7 +1,8 @@
 .header {
   background-color: #fff;
-  max-width: 110rem;
+  max-width: 120rem;
   margin: auto;
+  padding: 2rem 2rem 2em 12em;
 }
 .header ul {
   display: -webkit-box;
@@ -10,18 +11,21 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-left: 45%;
+  margin-left: 55%;
 }
 .header ul a {
   font-size: 2rem;
   color: black;
   margin-right: 2rem;
 }
+.header ul a :last-child {
+  margin-right: 0em;
+}
 
 .first {
-  max-width: 110rem;
+  max-width: 120rem;
   margin: auto;
-  background-color: pink;
+  background-color: #485f8b;
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -62,10 +66,10 @@ html, body {
   width: 100%;
   font-size: 10px;
   line-height: 1;
+  background-color: #7c1616;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: black;
 }
 
 input, button, textarea {
