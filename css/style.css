@@ -3,6 +3,20 @@
   max-width: 110rem;
   margin: auto;
 }
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 45%;
+}
+.header ul a {
+  font-size: 2rem;
+  color: black;
+  margin-right: 2rem;
+}
 
 .first {
   max-width: 110rem;
@@ -14,6 +28,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 5rem 7rem;
 }
 .first div {
   font-size: 1.5rem;
@@ -80,6 +95,7 @@ a:hover {
 
 ul li {
   list-style: none;
+  text-decoration: none;
 }
 
 img {
