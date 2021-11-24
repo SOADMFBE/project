@@ -1,0 +1,13 @@
+.first {
+    @include container();
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    div {
+        font-size: 1.5rem;
+        h1 {
+            font-size: 2rem;
+        }
+        margin: 1rem 2rem 1rem 2rem;
+    }
+}
