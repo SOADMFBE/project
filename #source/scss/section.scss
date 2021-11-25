@@ -17,5 +17,20 @@
 }
 
 .button {
-    
+    background-color: black;
+    @include container();
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    //grid-template-columns: auto;
+    //justify-content: center;
+    button {
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        margin: 3rem;
+    }
+    :hover{
+        background-color: cadetblue;
+        color: crimson;
+    }
 }
