@@ -2,10 +2,13 @@
     @include container();
     background-color: rgb(72, 95, 139);
     display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(1rem, 35rem));
+    grid-gap: 1rem;
     //grid-template-columns: 25% 25% 25%;
-    grid-auto-flow: column;
     justify-content: center;
-    padding: 5rem 7rem;
+    //padding: 5rem 7rem;
+    
     div {
         font-size: 1.5rem;
         h1 {
@@ -20,8 +23,9 @@
     background-color: black;
     @include container();
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1rem, 35rem));
     grid-gap: 1rem;
+    justify-content:center;
     //grid-template-columns: auto;
     //justify-content: center;
     button {
@@ -30,7 +34,21 @@
         margin: 3rem;
     }
     :hover{
-        background-color: cadetblue;
+        background-color: rgb(0, 0, 0);
         color: crimson;
+    }
+}
+
+.image {
+    display: grid;
+    @include container();
+    width: 50%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 0;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }

@@ -2,7 +2,7 @@
   background-color: #fff;
   max-width: 120rem;
   margin: auto;
-  padding: 2rem 2rem 2em 12em;
+  padding: 2rem;
 }
 .header ul {
   display: -webkit-box;
@@ -25,14 +25,15 @@
 .first {
   max-width: 120rem;
   margin: auto;
+  padding: 2rem;
   background-color: #485f8b;
   display: -ms-grid;
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, minmax(1rem, 35rem));
+  grid-gap: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5rem 7rem;
 }
 .first div {
   font-size: 1.5rem;
@@ -47,10 +48,14 @@
   background-color: black;
   max-width: 120rem;
   margin: auto;
+  padding: 2rem;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(1rem, 35rem));
   grid-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .button button {
   font-size: 2rem;
@@ -58,8 +63,26 @@
   margin: 3rem;
 }
 .button :hover {
-  background-color: cadetblue;
+  background-color: black;
   color: crimson;
+}
+
+.image {
+  display: -ms-grid;
+  display: grid;
+  max-width: 120rem;
+  margin: auto;
+  padding: 2rem;
+  width: 50%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 0;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 * {
