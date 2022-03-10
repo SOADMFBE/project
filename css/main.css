@@ -20,7 +20,7 @@
   font-size: calc(10px + 14 * ((100vw - 320px) / 960));
   color: black;
   margin-right: 2rem;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .header ul a :last-child {
