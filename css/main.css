@@ -4,6 +4,7 @@
   margin: auto;
   padding: 2rem;
 }
+
 .header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,11 +14,13 @@
           justify-content: space-evenly;
   margin-left: 55%;
 }
+
 .header ul a {
   font-size: 2rem;
   color: black;
   margin-right: 2rem;
 }
+
 .header ul a :last-child {
   margin-right: 0em;
 }
@@ -29,16 +32,19 @@
   background-color: #485f8b;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(1rem, 35rem));
+  -ms-grid-columns: (minmax(1rem, 35rem))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(1rem, 35rem));
   grid-gap: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .first div {
   font-size: 1.5rem;
   margin: 1rem 2rem 1rem 2rem;
 }
+
 .first div h1 {
   font-size: 2rem;
   margin: 1rem 3rem;
@@ -51,17 +57,20 @@
   padding: 2rem;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(1rem, 35rem));
+  -ms-grid-columns: (minmax(1rem, 35rem))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(1rem, 35rem));
   grid-gap: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .button button {
   font-size: 2rem;
   padding: 1rem 3rem;
   margin: 3rem;
 }
+
 .button :hover {
   background-color: black;
   color: crimson;
@@ -78,6 +87,7 @@
   margin-bottom: 10rem;
   padding: 0;
 }
+
 .image img {
   height: 100%;
   width: 100%;
@@ -90,6 +100,7 @@
   margin: 0;
   border: 0;
 }
+
 * :before, * :after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -152,3 +163,4 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
+/*# sourceMappingURL=main.css.map */
