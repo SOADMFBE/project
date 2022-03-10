@@ -10,11 +10,15 @@
     margin-left: 55%;
     
     a {
-        font-size: 2rem;
+        @include adaptiv-font(24,10);
         color: black;
         margin-right: 2rem;
+        font-weight: 200;
         :last-child {
             margin-right: 0em;
+        }
+        &:hover {
+            color: rgb(72, 95, 139);
         }
     }
    }

@@ -10,10 +10,12 @@
     //padding: 5rem 7rem;
     
     div {
-        font-size: 1.5rem;
+        @include adaptiv-font(18,12);
+        color: antiquewhite;
         h1 {
-            font-size: 2rem;
-            margin: 1rem 3rem;
+            @include adaptiv-font(36,24);
+            text-transform: uppercase;
+            font-weight: 300;
         }
         margin: 1rem 2rem 1rem 2rem;
     }
@@ -28,8 +30,13 @@
     justify-content:center;
     //grid-template-columns: auto;
     //justify-content: center;
+    .button-link{
+        display: grid;
+        place-items: center;
+    }
     button {
-        font-size: 2rem;
+        @include adaptiv-font(32,12);
+        font-weight: 300;
         padding: 1rem 3rem;
         margin: 3rem;
     }
@@ -41,14 +48,14 @@
 
 .image {
     display: grid;
+    place-items: center;
     @include container();
-    width: 50%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    padding: 0;
+    background-color: white;
     img {
-        height: 100%;
-        width: 100%;
+        width: 65%;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        padding: 0;
         object-fit: cover;
     }
 }

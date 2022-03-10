@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
 .header {
   background-color: #fff;
   max-width: 120rem;
@@ -16,13 +17,18 @@
 }
 
 .header ul a {
-  font-size: 2rem;
+  font-size: calc(10px + 14 * ((100vw - 320px) / 960));
   color: black;
   margin-right: 2rem;
+  font-weight: 200;
 }
 
 .header ul a :last-child {
   margin-right: 0em;
+}
+
+.header ul a:hover {
+  color: #485f8b;
 }
 
 .first {
@@ -41,13 +47,15 @@
 }
 
 .first div {
-  font-size: 1.5rem;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 960));
+  color: antiquewhite;
   margin: 1rem 2rem 1rem 2rem;
 }
 
 .first div h1 {
-  font-size: 2rem;
-  margin: 1rem 3rem;
+  font-size: calc(24px + 12 * ((100vw - 320px) / 960));
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .button {
@@ -65,8 +73,15 @@
           justify-content: center;
 }
 
+.button .button-link {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
 .button button {
-  font-size: 2rem;
+  font-size: calc(12px + 20 * ((100vw - 320px) / 960));
+  font-weight: 300;
   padding: 1rem 3rem;
   margin: 3rem;
 }
@@ -79,18 +94,18 @@
 .image {
   display: -ms-grid;
   display: grid;
+  place-items: center;
   max-width: 120rem;
   margin: auto;
   padding: 2rem;
-  width: 50%;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  padding: 0;
+  background-color: white;
 }
 
 .image img {
-  height: 100%;
-  width: 100%;
+  width: 65%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -162,5 +177,10 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
 }
 /*# sourceMappingURL=main.css.map */
